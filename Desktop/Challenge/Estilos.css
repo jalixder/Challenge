@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .container{
     position: relative;
     width: 100vw;
@@ -121,9 +116,7 @@
 
 .btn-encriptar:hover ,
 .btn-desencriptar:hover{
-    margin:0.3%;
-    width: 24.5%;
-    padding: 1.8%;
+    transform:scale(1.08);
 }
 
 .encriptado{
