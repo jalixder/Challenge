@@ -128,8 +128,25 @@
     left: 69.44%;
     top: 5%;
     background: #ffff;
+    float:inline-end;
     box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
     border-radius: 32px;
+}
+
+.mensaje{
+    display: flexbox;
+    justify-content: center;
+    position: absolute;
+    width: 90%;
+    height: 92.2%;
+    left: 5%;
+    top: 5%;
+    border: none;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
 }
 
 .encriptado img{
@@ -173,3 +190,4 @@
     text-align: center;
     color: #495057;
 }
+

@@ -3,12 +3,15 @@
 	<head>
 		<meta charset="UFT-8">
 		<title>Encriptador</title>
+		<script type="text/javaScript" src="Encriptador.js"></script>   
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="Estilos.css">  
 	</head>
 	<body>
+		<!--<header></header>-->
 		<div class="container">
-			<img src="Logo.png" alt="" id="logo">                    
+			<img src="Logo.png" alt="logo de Alura" id="logo">
+			<!--<section></section>-->                    
 			<div class="encriptar">
 				<textarea 
 					name="texto" 
@@ -27,30 +30,29 @@
 					type="button"
 					class="btn-encriptar"
 					value="Encriptar"
-					onclick="encriptar()"
-				/>
+					onclick="encriptar()"/>
 				<input 
 					type="button"
 					class="btn-desencriptar"
 					value="Desencriptar"
-					onclick="desencriptar()"
-				/>
+					onclick="desencriptar()"/>
+			<!--<section></section>-->
 			</div>
 				<div class="encriptado">
-				<img src="Muneco.png" alt="" id="muneco">
-				<div class="mensaje-encriptado" id="mensaje encriptado">
-					<h2 id="Titulo Mensaje">Ningún mensaje fue encontrado</h2>
-					<p id="parrafo">Ingresa el texto que desea encriptar o desencriptar</p>
-					<!-- <textarea 
+					<textarea 
 						name="mensaje" 
 						id="mensaje" 
 						cols="30" 
 						rows="10" 
 						class="mensaje">
-					</textarea> -->
-				</div>
+					</textarea>
+				<img src="Muneco.png" alt="Imagen de muñeco" id="muneco">
+				<div class="mensaje-encriptado" id="mensaje encriptado">
+					<h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+					<p id="parrafo">Ingresa el texto que desea encriptar o desencriptar</p>
+				</div>								
 			</div>
 		</div>
+		<!--<footer></footer> --->
 	</body>
-	<script src="Encriptador.js"></script>          
 </html>
