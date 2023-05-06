@@ -39,3 +39,9 @@ function desencriptar(){
         alert("POR FAVOR INGRESE ALGUN TEXTO!!!")
     }        
 }
+
+function copiar(){
+    var btn3 = document.querySelector("btn-copiar");
+    navigator.clipboard.writeText(mensaje.textContent);
+    document.getElementById("texto").focus();
+}

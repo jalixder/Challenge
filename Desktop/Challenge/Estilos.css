@@ -115,7 +115,8 @@
 }
 
 .btn-encriptar:hover ,
-.btn-desencriptar:hover{
+.btn-desencriptar:hover,
+.btn-copiar:hover{
     transform:scale(1.08);
 }
 
@@ -191,3 +192,18 @@
     color: #495057;
 }
 
+.btn-copiar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap:8px;
+    width: 48.2%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffff;
+}
