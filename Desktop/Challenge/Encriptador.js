@@ -13,9 +13,11 @@ function encriptar(){
         document.getElementById("titulo-mensaje").style.display="none";
         document.getElementById("mensaje").style.display="flexbox";
         document.getElementById("mensaje").innerHTML=texto;
-        var btn = document.querySelector("#btn-encriptar");                 
+        var btn = document.querySelector("#btn-encriptar");
+        document.getElementById("btn-copiar").style.display="flex";                
     } else{
         alert("POR FAVOR INGRESE ALGUN TEXTO!!!")
+        document.getElementById("texto").focus();
     }        
 }
 
@@ -34,9 +36,11 @@ function desencriptar(){
         document.getElementById("titulo-mensaje").style.display="none";
         document.getElementById("mensaje").style.display="flexbox";
         document.getElementById("mensaje").innerHTML=texto;
-        var btn2 = document.querySelector("#btn-desencriptar");                 
+        var btn2 = document.querySelector("#btn-desencriptar");
+        document.getElementById("btn-copiar").style.display="flex";                 
     } else{
         alert("POR FAVOR INGRESE ALGUN TEXTO!!!")
+        document.getElementById("texto").focus();
     }        
 }
 
