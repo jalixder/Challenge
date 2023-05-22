@@ -1,36 +1,49 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 	<head>
 		<meta charset="UFT-8">
+		<meta name="viewport" content="width=device-width">
 		<title>Encriptador</title>
 		<script type="text/javaScript" src="Encriptador.js"></script>   
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="Estilos.css">  
 	</head>
+
 	<body>
-		<!--<header></header>-->
-		<div class="container">
+
+		<header>
+			<div class="container">
 			<img src="Logo.png" alt="logo de Alura" id="logo">
-			<!--<section></section>-->                    
-			<div class="encriptar">
-				<textarea 
-					name="texto" 
-					class="texto"
-					id="texto" 
-					cols="30"
-					rows="10"
-					placeholder="Ingresa el texto aqui"
-					autofocus
-				></textarea>
-			</div>
-			<div class="condicion">
-				<p>&#9888 Solo letras minúsculas y sin acento</p>
-			</div>
-			<div class="botones">
-				<button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
-				<button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
-			<!--<section></section>-->
-			</div>
+		</header>
+		
+		<main>
+
+			<section class="uno">
+
+				<div class="encriptar">
+					<textarea 
+						name="texto" 
+						class="texto"
+						id="texto" 
+						cols="30"
+						rows="10"
+						placeholder="Ingresa el texto aqui"
+						autofocus
+					></textarea>
+				</div>
+				<div class="condicion">
+					<p>&#9888 Solo letras minúsculas y sin acento</p>
+				</div>
+				<div class="botones">
+					<button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+					<button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+
+			</section>                  
+			
+			<section class="dos">
+
 				<div class="encriptado">
 					<textarea 
 						name="mensaje" 
@@ -39,19 +52,25 @@
 						rows="10" 
 						class="mensaje">
 					</textarea>
-				<img src="Muneco.png" alt="Imagen de muñeco" id="muneco">
+					<img src="Muneco.png" alt="Imagen de muñeco" id="muneco">
+				</div>
 				<div class="mensaje-encriptado" id="mensaje encriptado">
 					<h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
 					<p id="parrafo">Ingresa el texto que desea encriptar o desencriptar</p>
 				</div>
 				<div class="boton-C">
 					<button class="btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
-				</div>								
-			</div>
-		</div>
+				</div>			
+
+			</section>
+
+		</main>			
+			
 		<footer>
 			<img src="Franja.png" class="pie">
 			<p class="autor">&#174; By: Jose Alixder Sanchez - 2023</p> 
-		</footer> 
+		</footer>
+
 	</body>
+	
 </html>

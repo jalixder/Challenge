@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 40px;
     position: absolute;
     width: 120px;
@@ -20,8 +19,8 @@
 
 .texto{
     position: absolute;
-    width: 42%;
-    height: 60%;
+    width: auto;
+    height: auto;
     left: 16.66%;
     top: 16.4%;
     border: none;
@@ -138,8 +137,9 @@
     display: flexbox;
     justify-content: center;
     position: absolute;
-    width: 90%;
-    height: 92.2%;
+    width: auto;
+    height: auto;
+    max-width: 90%;
     left: 5%;
     top: 5%;
     border: none;
@@ -165,9 +165,11 @@
     padding: 1%;
     gap: 16px;
     position: absolute;
-    width: 100%;
+    width: 27.7%;
+    left:69.44%;
     top: 64.33%;
     text-align: center;
+    float: inline-end;
 }
 
 .mensaje-encriptado h2{
@@ -195,16 +197,16 @@
 .boton-C{
     display: flex;
     position: absolute;
-    width: 84%;
-    left: 15%;
-    top: 85%;
+    width: 29%;
+    left: 71%;
+    top: 84%;
 }
 
 .btn-copiar{
     display: none;
     align-items: center;
     justify-content: center;
-    gap:8px;
+    gap: 8px;
     width: 84%;
     height: 50px;
     background-color: #ffffff;
