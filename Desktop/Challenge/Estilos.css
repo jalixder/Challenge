@@ -134,7 +134,7 @@
 }
 
 .mensaje{
-    display: flexbox;
+    display: flex;
     justify-content: center;
     position: absolute;
     width: auto;
@@ -152,6 +152,7 @@
 
 .encriptado img{
     position: absolute;
+    flex-wrap: wrap;
     width: 80%;
     height: 50%;
     top: 10%;
@@ -236,4 +237,75 @@ footer{
     text-align: right;
     color: #f3f5fe;
     font-size: 15px;
+}
+
+@media screen and (max-width: 376px){
+
+    .container{
+        width: 375px;
+        height: 700px;
+        position: static;
+    }
+
+    .container img{
+        left: 0px;
+    }
+
+    .texto{
+        width: 300px;
+        left: 50px;
+    }
+
+    .condicion{
+        left: 25px;
+    }
+
+    .botones{
+        flex-direction: column;
+        width: 350px;
+        left: 15px;
+        justify-content: space-between;
+    }
+
+    .btn-encriptar, .btn-desencriptar{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .btn-desencriptar{
+        margin-left: 0%;
+    }
+
+    .encriptado{
+        height: 50px;
+        width: 360px;
+        left: 15px;
+        top: 105%;
+        box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
+        border-radius: 32px;
+    }
+
+    .mensaje{
+        line-height: 49%;
+    }
+
+    .encriptado img{
+        display: none;
+    }
+
+    .mensaje-encriptado{
+        top: 104%;
+        width: 95%;
+        left: 5%;
+        padding: 0%;
+        border-radius: 32px;
+        background-color: #ffffff;
+    }
+
+    .boton-C{
+        width: 370px;
+        left: 15px;
+        top: 115%;
+    }
+
 }
